@@ -54,13 +54,13 @@ class TPQueue {// реализация шаблона очереди с прио
             a->prev->next = item;
             item->prev = a->prev;
             item->next = a;
-            a->prev = item;     
+            a->prev = item;
         }
     }
 };
 
 struct SYM {
-  char ch;      
+  char ch;
   int prior;
 };
 
