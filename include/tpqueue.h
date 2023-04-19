@@ -12,8 +12,8 @@ class TPQueue {// реализация шаблона очереди с прио
         ITEM* prev;
     };
     TPQueue::ITEM* create(const T& data) {
-        ITEM* item=new ITEM;
-        item->data=data;
+        ITEM* item = new ITEM;
+        item->data = data;
         item->next = nullptr;
         item->prev = nullptr;
         return item;
@@ -37,7 +37,7 @@ class TPQueue {// реализация шаблона очереди с прио
     }
     void push(const T& data) {
         ITEM* a = head;
-        ITEM* item=create(data);
+        ITEM* item = create(data);
         while (a && a->data.prior >= data.prior)
             a = a->next;
         if (!a && head) { // вставка в конец
