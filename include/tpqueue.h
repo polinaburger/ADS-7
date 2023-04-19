@@ -61,7 +61,7 @@ class TPQueue {// реализация шаблона очереди с прио
 
 struct SYM {
   char ch;      
-  
+  int prior;
 };
 
 #endif  // INCLUDE_TPQUEUE_H_
